@@ -19,7 +19,7 @@ async function handleIncrementHeart(id: number) {
   const token = localStorage.getItem("token");
   try {
     const response = await fetch(
-      `https://wara-back-qr9q.onrender.com/api/user/review/${id}`,
+      `https://sample-release-backend.onrender.com/api/user/review/${id}`,
       {
         method: "POST",
         headers: {
@@ -41,7 +41,7 @@ async function handleDecrementHeart(id: number) {
   const token = localStorage.getItem("token");
   try {
     const response = await fetch(
-      `https://wara-back-qr9q.onrender.com/api/user/review/${id}`,
+      `https://sample-release-backend.onrender.com/api/user/review/${id}`,
       {
         method: "DELETE",
         headers: {

@@ -26,7 +26,7 @@ export default function PostPage() {
     const fetchLatestTopic = async (token: string | null) => {
       if (token) {
         const res = await fetch(
-          `https://wara-back-qr9q.onrender.com/api/user/recent`,
+          `https://sample-release-backend.onrender.com/api/user/recent`,
           {
             headers: {
               "Content-Type": "application/json",

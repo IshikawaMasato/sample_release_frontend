@@ -23,7 +23,7 @@ export default function SignUpPage() {
 
     try {
       const res = await fetch(
-        "https://wara-back-qr9q.onrender.com/api/checkEmail",
+        "https://sample-release-backend.onrender.com/api/checkEmail",
         {
           method: "POST",
           headers: {
@@ -58,7 +58,7 @@ export default function SignUpPage() {
 
     try {
       const res = await fetch(
-        "https://wara-back-qr9q.onrender.com/api/register",
+        "https://sample-release-backend.onrender.com/api/register",
         {
           method: "POST",
           headers: {

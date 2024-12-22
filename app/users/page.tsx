@@ -21,7 +21,7 @@ export default function Page() {
     const token = localStorage.getItem("token");
     const fetchMyUser = async (token: string | null) => {
       const res = await fetch(
-        `https://wara-back-qr9q.onrender.com/api/user/mypage`,
+        `https://sample-release-backend.onrender.com/api/user/mypage`,
         {
           headers: {
             "Content-Type": "application/json",

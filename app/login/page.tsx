@@ -45,7 +45,7 @@ export default function LoginPage() {
 
     try {
       const response = await fetch(
-        "https://wara-back-qr9q.onrender.com/api/login",
+        "https://sample-release-backend.onrender.com/api/login",
         {
           method: "POST",
           headers: {

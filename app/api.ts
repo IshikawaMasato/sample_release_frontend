@@ -12,7 +12,7 @@ import {
 //認証終わったらAPI叩けるはず
 export const fetchTimeline = async (): Promise<TimeLineData> => {
   const res = await fetch(
-    "https://wara-back-qr9q.onrender.com/api/user/posts",
+    "https://sample-release-backend.onrender.com/api/user/posts",
     {
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +27,7 @@ export const fetchTimeline = async (): Promise<TimeLineData> => {
 //ユーザーの獲得いいね数ランキングを取ってくる
 export const fetchAllUserRanking = async (): Promise<Users> => {
   const res = await fetch(
-    "https://wara-back-qr9q.onrender.com/api/user/users",
+    "https://sample-release-backend.onrender.com/api/user/users",
     {
       headers: {
         "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export const fetchAllUserRanking = async (): Promise<Users> => {
 //自分のユーザー情報を取ってくる
 export const fetchMyUser = async (): Promise<DetailUser> => {
   const res = await fetch(
-    "https://wara-back-qr9q.onrender.com/api/user/mypage",
+    "https://sample-release-backend.onrender.com/api/user/mypage",
     {
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ export const fetchMyUser = async (): Promise<DetailUser> => {
 //自分の投稿の情報を取ってくる
 export const fetchMyPosts = async (): Promise<Posts> => {
   const res = await fetch(
-    "https://wara-back-qr9q.onrender.com/api/user/myposts",
+    "https://sample-release-backend.onrender.com/api/user/myposts",
     {
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +72,7 @@ export const fetchMyPosts = async (): Promise<Posts> => {
 //特定のユーザーのユーザー情報を取ってくる
 export const fetchDetailUser = async (id: number): Promise<DetailUser> => {
   const res = await fetch(
-    `https://wara-back-qr9q.onrender.com/api/user/otherUser/${id}`,
+    `https://sample-release-backend.onrender.com/api/user/otherUser/${id}`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export const fetchDetailUser = async (id: number): Promise<DetailUser> => {
 //特定のユーザーの投稿を取ってくる
 export const fetchUserPosts = async (id: number): Promise<Posts> => {
   const res = await fetch(
-    `https://wara-back-qr9q.onrender.com/api/user/otherUserPosts/${id}`,
+    `https://sample-release-backend.onrender.com/api/user/otherUserPosts/${id}`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -102,7 +102,7 @@ export const fetchUserPosts = async (id: number): Promise<Posts> => {
 //最新のお題を取ってくる
 export const fetchLatestTopic = async (): Promise<TopicData> => {
   const res = await fetch(
-    `https://wara-back-qr9q.onrender.com/api/user/topic`,
+    `https://sample-release-backend.onrender.com/api/user/topic`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ export const fetchLatestTopic = async (): Promise<TopicData> => {
 //特定のお題を取ってくる
 export const fetchDetailTopic = async (id: number): Promise<TopicData> => {
   const res = await fetch(
-    `https://wara-back-qr9q.onrender.com/api/user/topic/${id}`,
+    `https://sample-release-backend.onrender.com/api/user/topic/${id}`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -135,7 +135,7 @@ export const fetchDetailPost = async (
   token: string
 ): Promise<PostData> => {
   const res = await fetch(
-    `https://wara-back-qr9q.onrender.com/api/user/posts/${id}`,
+    `https://sample-release-backend.onrender.com/api/user/posts/${id}`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -149,7 +149,7 @@ export const fetchDetailPost = async (
 };
 
 export const getAllPosts = async (): Promise<Posts[]> => {
-  const res = await fetch("https://wara-back-qr9q.onrender.com/post", {
+  const res = await fetch("https://sample-release-backend.onrender.com/post", {
     cache: "no-store",
   });
   const AllPosts = res.json();
@@ -159,7 +159,7 @@ export const getAllPosts = async (): Promise<Posts[]> => {
 
 export const IncrementHeartPoints = async (id: number): Promise<void> => {
   String(id);
-  const res = await fetch(`https://wara-back-qr9q.onrender.com/post/${id}`, {
+  const res = await fetch(`https://sample-release-backend.onrender.com/post/${id}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -169,7 +169,7 @@ export const IncrementHeartPoints = async (id: number): Promise<void> => {
 
 export const DecrementHeartPoints = async (id: number): Promise<void> => {
   String(id);
-  const res = await fetch(`https://wara-back-qr9q.onrender.com/post/${id}`, {
+  const res = await fetch(`https://sample-release-backend.onrender.com/post/${id}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

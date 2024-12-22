@@ -15,7 +15,7 @@ const Page = () => {
       const token = localStorage.getItem("token");
       if (token) {
         const res = await fetch(
-          `https://wara-back-qr9q.onrender.com/api/user/recent`,
+          `https://sample-release-backend.onrender.com/api/user/recent`,
           {
             headers: {
               "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const Page = () => {
 
       try {
         const res = await fetch(
-          "https://wara-back-qr9q.onrender.com/api/user/posts",
+          "https://sample-release-backend.onrender.com/api/user/posts",
           {
             headers: {
               "Content-Type": "application/json",

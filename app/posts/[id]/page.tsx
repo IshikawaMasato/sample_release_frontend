@@ -12,7 +12,7 @@ export default function PostPage({ params }: { params: { id: number } }) {
     const token = localStorage.getItem("token");
     const fetchDetailPost = async (id: number, token: string | null) => {
       const res = await fetch(
-        `https://wara-back-qr9q.onrender.com/api/user/posts/${id}`,
+        `https://sample-release-backend.onrender.com/api/user/posts/${id}`,
         {
           headers: {
             "Content-Type": "application/json",

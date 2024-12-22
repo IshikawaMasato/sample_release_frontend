@@ -13,7 +13,7 @@ const Page = () => {
     const token = localStorage.getItem("token");
     const fetchAllUserRanking = async (token: string | null) => {
       const res = await fetch(
-        "https://wara-back-qr9q.onrender.com/api/user/users",
+        "https://sample-release-backend.onrender.com/api/user/users",
         {
           headers: {
             "Content-Type": "application/json",

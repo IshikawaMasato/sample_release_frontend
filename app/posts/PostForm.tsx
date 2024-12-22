@@ -23,7 +23,7 @@ export default function PostForm(props: Props) {
 
     try {
       const response = await fetch(
-        `https://wara-back-qr9q.onrender.com/api/user/posts/${props.topicId}`,
+        `https://sample-release-backend.onrender.com/api/user/posts/${props.topicId}`,
         {
           method: "POST",
           headers: {
